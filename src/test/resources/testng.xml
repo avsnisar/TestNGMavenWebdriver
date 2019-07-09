@@ -3,7 +3,7 @@
 <suite name="Tests" verbose="5">
   <test name="Test1">
     <classes>
-      <class name="com.example.test.SampleTestNgTest"/>
+      <class name="com.example.test.BigmirLoginTest"/>
     </classes>
   </test>  
 </suite>
