@@ -17,7 +17,7 @@ import ru.stqa.selenium.factory.WebDriverPool;
  */
 public class TestNgTestBase {
 
-  protected static URL gridHubUrl = null;
+  protected static URL gridHubUrl;
   protected static String baseUrl;
   protected static Capabilities capabilities;
 

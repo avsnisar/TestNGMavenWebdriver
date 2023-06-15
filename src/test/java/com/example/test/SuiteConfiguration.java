@@ -5,6 +5,7 @@ import org.openqa.selenium.Platform;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -31,7 +32,17 @@ public class SuiteConfiguration {
 
     Properties capsProps = new Properties();
     capsProps.load(SuiteConfiguration.class.getResourceAsStream(capabilitiesFile));
-
+    /*
+	 * //or this variant 
+	 * FileInputStream fis = new FileInputStream(capabilitiesFile); 
+	 * capsProps.load(fis);
+	 */
+    /*
+	 * //or this variant 
+	 * String capabilitiesPath = System.getProperty("user.dir")+"\\src\\test\\resources\\chrome.capabilities";
+	 * FileInputStream fis = new FileInputStream(capabilitiesPath); 
+	 * capsProps.load(fis);
+	 */
     DesiredCapabilities capabilities = new DesiredCapabilities();
     for (String name : capsProps.stringPropertyNames()) {
       String value = capsProps.getProperty(name);
