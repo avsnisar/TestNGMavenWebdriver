@@ -1,2 +1,2 @@
 # TestNGMavenWebdriver
-example Maven project with TestNG framework java tests
+JAVA with Maven project using Page Object and PageFactory patterns altogether with TestNG framework tests and remote webdriver pool
